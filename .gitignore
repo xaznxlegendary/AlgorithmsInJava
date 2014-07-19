@@ -1,0 +1,10 @@
+build
+buildtest
+log
+var
+*localConfig.xml
+*.log
+*.log*
+.svn
+.cvsignore
+build.properties
