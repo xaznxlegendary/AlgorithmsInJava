@@ -8,3 +8,4 @@ var
 .svn
 .cvsignore
 build.properties
+.settings
