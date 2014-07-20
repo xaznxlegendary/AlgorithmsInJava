@@ -17,15 +17,16 @@ public class InsertionSort {
     
     for(int i = 1; i < elements.length; i++) {
       int position = i;
+      T element = elements[position];
       
-      while(position > 0 && comparator.compare(elements[position - 1], elements[position]) > 0) {
+      while(position > 0 && comparator.compare(elements[position - 1], element) > 0) {
         //swap
-        T temp = elements[position];
         elements[position] = elements[position - 1];
-        elements[position - 1] = temp;
         
         position -= 1;
       }
+      
+      elements[position] = element;
     }
   }
 }
